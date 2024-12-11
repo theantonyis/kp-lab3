@@ -17,7 +17,7 @@ import kotlin.test.assertContains
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
-internal object ApplicationTest {
+internal object {
     private const val resultsFile = "results.txt"
     private var baos: ByteArrayOutputStream = ByteArrayOutputStream()
     private var helpMsg = "no message"

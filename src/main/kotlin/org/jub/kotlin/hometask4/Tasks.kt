@@ -4,6 +4,7 @@ import org.jub.kotlin.hometask4.internal.dataClassTasks
 import org.jub.kotlin.hometask4.internal.enumTasks
 import org.jub.kotlin.hometask4.internal.intTasks
 import org.jub.kotlin.hometask4.internal.stringTasks
+import java.util.concurrent.Callable
 
 enum class Color {
     BLACK,
@@ -24,4 +25,4 @@ enum class Color {
 
 data class CountryPopulation(val country: String, val population: Int)
 
-val tasks = intTasks + stringTasks + enumTasks + dataClassTasks
+val tasks: List<Callable<out Any>> = intTasks + stringTasks + enumTasks + dataClassTasks
